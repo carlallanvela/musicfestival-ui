@@ -1,1 +1,20 @@
-{{musicFestivals}}
+<h1> Music Festivals </h1>
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Record Label</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let recordLabel of recordLabel">
+        <td>{{recordLabel.accountNumber}}</td>
+        <tr *ngFor="let band of bands"></tr>
+         <td>{{band.name}}</td>
+         <tr *ngFor="let festival of Festivals"></tr>
+           <td>{{festival.name}}</td>
+        </tr>
+      </tr>
+    </tbody>
+  </table>
+</div>
